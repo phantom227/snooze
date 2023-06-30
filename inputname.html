@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNOOZE</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aad8ait.css">
+    <script src="js/vue.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="grid desktop tablet mainContent">
+
+        <div class="appbackground">
+
+            <div class="cloudone"></div>
+            <div class="cloudtwo"></div>
+            <div class="cloudthree"></div>
+            <div class="cloudfour"></div>
+
+            <section class="name">
+                <div class="namequestion">What is your name?</div>
+
+
+                <div id="app">
+                    <div class="hello">Welcome<br><span class="snooze">{{ title }}</span></div>
+                    <div class="footer">
+                        <input v-model="title" placeholder="Please enter your name" />
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="namecont">
+
+                <a href="inputrecord.html">
+                    <div class="namecontinue">Continue</div>
+                </a>
+
+            </section>
+
+            <div class="moonbottom"></div>
+
+            <script>
+                new Vue({
+                    el: '#app',
+                    data: {
+                        title: ''
+                    }
+                });
+            </script>
+
+        </div>
+
+    </div>
+
+</body></html>

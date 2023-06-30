@@ -1,0 +1,69 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*fonts*/
+
+
+/* *******************************************
+GRID SYSTEM
+******************************************* */
+
+.mainContent {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0rem;
+}
+
+.cell {
+    display: grid;
+    height: 400px;
+    text-align: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    .desktop {
+        opacity: 0%;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .tablet {
+        opacity: 0%;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .col1 {
+        grid-column-end: span 5;
+    }
+
+    .col2 {
+        grid-column-end: span 2.5;
+    }
+
+    .col3 {
+        grid-column-end: span 4;
+    }
+
+    .col4 {
+        grid-column-end: span 3;
+    }
+
+    .col5 {
+        grid-column-end: span 1;
+    }
+
+}
